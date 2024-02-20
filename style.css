@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection {
+  background-color: transparent;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.75;
+    scale: 1.12;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body {
+  text-align: center;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+  margin: 20vh auto 0;
+}
+.circle {
+  background-color: crimson;
+  width: 75px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin: 3rem auto;
+  cursor: pointer;
+}
+.circle:hover {
+  transform: translateX(200%);
+}
